@@ -14,8 +14,15 @@
     <title>Tokenpocket</title>
     <link rel="icon" href="data:,">
     <style>
-        body {
-            overflow: hidden;
+        @media (min-width: 769px) {
+            body {
+                overflow: hidden;
+            }
+        }
+        @media (max-width: 768px) {
+            html, body {
+                overflow-x: hidden;
+            }
         }
 
         #Loading {
