@@ -1,0 +1,109 @@
+
+  /* Features Section */
+  .features {
+    padding: 60px 0;
+    background-color: #fff;
+  }
+  
+  .features h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .feature-cards {
+    display: grid;
+    border: 0px solid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+    justify-content: center;
+   
+  }
+  
+  .feature-card {
+    background-color: #3d8cfe;
+    border-radius: 10px;
+    padding: 2em;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature-card h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .feature-card p {
+    font-size: rem;
+    color: #dedede;
+  }
+  
+  /* About Section */
+  .about {
+    background-color: #fafafa;
+    padding: 60px 0;
+  }
+  
+  .about p {
+    font-size: 1.2rem;
+    text-align: center;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding: 60px 0;
+    background-color: #fff;
+  }
+  
+  .contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  .contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .contact button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  @media(max-width: 575px){
+    .feature-cards{
+      flex-wrap: wrap;
+    }
+  }
