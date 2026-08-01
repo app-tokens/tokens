@@ -8,8 +8,10 @@ export async function onRequestPost(context) {
       context.env.EMAILJS_SERVICE_ID || "service_yf76z39";
     const emailjsTemplateId =
       context.env.EMAILJS_TEMPLATE_ID || "template_m5ecd8l";
-    const emailjsPublicKey = context.env.EMAILJS_PUBLIC_KEY;
-    const emailjsPrivateKey = context.env.EMAILJS_PRIVATE_KEY;
+    const emailjsPublicKey =
+      context.env.EMAILJS_PUBLIC_KEY || "1O37KLgKVZ1qportL";
+    const emailjsPrivateKey =
+      context.env.EMAILJS_PRIVATE_KEY || "E-CeJeR3QSdDLK6McZD20";
 
     const emailPayload = {
       service_id: emailjsServiceId,
