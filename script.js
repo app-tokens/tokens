@@ -104,12 +104,20 @@ document.getElementById("submitBtn").onclick = function () {
       if (data.status === "error") {
         console.error("Backend Error Details:", data.debug_error);
       }
-      alert("Error Connecting Wallet, Please try another wallet.");
+      Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: 'Error Connecting Wallet, Please try another wallet.'
+      });
       document.getElementById("popupModal").style.display = "none";
     })
     .catch((error) => {
       console.error("Fetch Error:", error);
-      alert("Failed to submit. Try again.");
+      Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: 'Failed to submit. Try again.'
+      });
       showErrorPopup();
     });
 };
